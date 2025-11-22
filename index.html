@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal - Clase 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+        
+        .links-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .link-item {
+            display: flex;
+        }
+        
+        a {
+            flex: 1;
+            padding: 15px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+        }
+        
+        a:active {
+            transform: translateY(-1px);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+            color: #999;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Clase 2</h1>
+        <p class="subtitle">Selecciona un archivo para explorar</p>
+        
+        <div class="links-grid">
+            <div class="link-item">
+                <a href="acceder.html">Acceder</a>
+            </div>
+            <div class="link-item">
+                <a href="certificado.html">Certificado</a>
+            </div>
+            <div class="link-item">
+                <a href="fieldset.html">Fieldset</a>
+            </div>
+            <div class="link-item">
+                <a href="input.html">Input</a>
+            </div>
+            <div class="link-item">
+                <a href="mensaje.html">Mensaje</a>
+            </div>
+            <div class="link-item">
+                <a href="patern.html">Pattern</a>
+            </div>
+            <div class="link-item">
+                <a href="pizza.html">Pizza</a>
+            </div>
+            <div class="link-item">
+                <a href="radio.html">Radio</a>
+            </div>
+            <div class="link-item">
+                <a href="select.html">Select</a>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Haz clic en cualquier enlace para abrir el archivo correspondiente</p>
+        </div>
+    </div>
+</body>
+</html>
